@@ -135,13 +135,13 @@ const wordsUnique = [
   "bring",
 ];
 
-function uniquifyArray(words) {
-  if (!words.length) {
+function uniquifyArray(wordsArr) {
+  if (!wordsArr.length) {
     return null;
   }
   let uniqueArr = []; 
-  for (i = 0; i < words.length; i++) {
-    let word = words[i];
+  for (i = 0; i < wordsArr.length; i++) {
+    let word = wordsArr[i];
     if (uniqueArr.indexOf(word) < 0) {
       uniqueArr.push(word);
     } 
