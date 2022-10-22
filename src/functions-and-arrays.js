@@ -172,6 +172,19 @@ function doesWordExist(arr, word) {
   }
 }
 
+// Another way
+// function doesWordExist(arr, word) {
+//   if (!arr.length) {
+//     return null;
+//   }
+//   for (let i = 0; i < arr.length; i++) {
+//     if (word === arr[i]) {
+//       return true;
+//     }
+//   }
+//   return false;
+// }
+
 // Iteration #7: Count repetition
 const wordsCount = [
   "machine",
