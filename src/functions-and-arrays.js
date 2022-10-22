@@ -165,14 +165,11 @@ function doesWordExist(arr, word) {
   if (!arr.length) {
     return null;
   }
-  for (i = 0; i < arr.length; i++) {
-    if (arr.indexOf(word) < 0) {
-      return false;
-    } else if (arr.indexOf(word) >= 0) {
-      return true;
-    }
+  if (arr.indexOf(word) < 0) {
+    return false;
+  } else if (arr.indexOf(word) >= 0) {
+    return true;
   }
-
 }
 
 // Iteration #7: Count repetition
